@@ -47,6 +47,14 @@ echo $this->Easyforcake->search(array(
 
 to set the parameters.
 
+<h3>Callback function</h3>
+
+```javascript
+function easyforcake(id,value) {
+    alert(id + ' - ' + value);
+}
+```
+
 <h2>License</h2>
 
 MIT LICENSE
