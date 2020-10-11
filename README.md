@@ -16,26 +16,34 @@ jQuery
 - upload Easyforcake folder in the /app/Plugin/ folder
 - activate the plugin in /app/Config/bootstrap.php
 
+```php
 CakePlugin::loadAll(array( <br>
     'Easyforcake' => array('bootstrap' => true, 'routes' => true)
 ));
+```
 
 <h3>In the controller or AppController</h3>
 
+```php
 public $helpers = array('Easyforcake.Easyforcake');
+```
 
 <h3>In the View</h3>
 
+```php
 echo $this->Easyforcake->init();
+```
 
 for initializing and
 
+```php
 echo $this->Easyforcake->search(array(
     'selector' => '#q',
     'url' => '/easyforcake/autocomplete',
     'model' => 'Model',
     'field' => 'name'
 )); 
+```
 
 to set the parameters.
 
